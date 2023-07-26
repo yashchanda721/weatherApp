@@ -86,7 +86,7 @@ Before running the application, ensure you have the following installed:
 To start the server, run the following command:
 
 ```
-node app.js
+node index.js
 ```
 
 The server will be running on `http://localhost:3000`.
