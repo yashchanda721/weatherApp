@@ -9,7 +9,7 @@ const app = express();
 const PORT = 3000;
 
 // MongoDB connection
-const MONGODB_URI = 'mongodb://localhost:27017/weather_app';
+const MONGODB_URI = 'mongodb+srv://yashkumarchanda:QifwxPhB803VLFYE@cluster0.trm1taz.mongodb.net/';
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to MongoDB');
