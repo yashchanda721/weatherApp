@@ -49,7 +49,15 @@ Before running the application, ensure you have the following installed:
      POST /api/weather
      ```
 
-     Send a JSON object with weather data in the request body.
+     Send a JSON object with weather data in the request body. Example JSON object for create data:
+
+     ```json
+     {
+       "location": "mumbai",
+       "temperature": 299.14,
+       "humidity": 100
+     }
+     ```
 
    - Get Weather Data by Location:
 
@@ -71,7 +79,15 @@ Before running the application, ensure you have the following installed:
      PUT /api/weather/:location
      ```
 
-     Replace `:location` with the name of the location you want to update weather data for.
+     Replace `:location` with the name of the location you want to update weather data for. Send a JSON object with the updated weather data in the request body.
+
+      ```json
+     {
+       "location": "budepest",
+       "temperature": 294.32,
+       "humidity": 100
+     }
+     ```
 
    - Delete Weather Data by Location:
 
@@ -93,6 +109,6 @@ The server will be running on `http://localhost:3000`.
 
 ## Notes
 
-- Make sure to replace the `apiKey` variable with your actual OpenWeatherMap API key in `fetchAndStoreWeatherData` function.
+- Make sure to replace the `apiKey` variable with your actual OpenWeatherMap API key in the `fetchAndStoreWeatherData` function.
 
 Feel free to explore and enhance the application as per your requirements. Happy coding!
